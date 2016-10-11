@@ -2,17 +2,18 @@
     @Html.Widget("header")
     <div class="header-upper">
         <div class="header-selectors-wrapper">
+            @Html.Widget("header_selectors")
             @Html.Action("TaxTypeSelector", "Common")
             @Html.Action("CurrencySelector", "Common")
             @Html.Action("LanguageSelector", "Common")
-            @Html.Widget("header_selectors")
         </div>
         <div class="header-links-wrapper">
             @Html.Action("HeaderLinks", "Common")
             @Html.Action("FlyoutShoppingCart", "ShoppingCart")
         </div>
     </div>
-    <div class="header-lower">
+   <!--
+     <div class="header-lower">
         <div class="header-logo">
             @Html.Action("Logo", "Common")
         </div>
@@ -20,4 +21,5 @@
             @Html.Action("SearchBox", "Catalog")
         </div>
     </div>
+       -->
 </div>
